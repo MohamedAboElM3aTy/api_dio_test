@@ -3,7 +3,7 @@ import 'package:api_dio_test/pages/weather_page.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
-  await initMapsGetIt();
+  await initGetIt();
   runApp(const MainApp());
 }
 
@@ -12,6 +12,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: WeatherPage());
+    return const MaterialApp(
+      home: WeatherPage(),
+    );
   }
 }

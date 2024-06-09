@@ -10,4 +10,4 @@ GetIt getIt = GetIt.instance;
   asExtension: false, // default
   usesNullSafety: true, // default
 )
-Future<GetIt> initMapsGetIt() async => $initGetIt(getIt);
+Future<GetIt> initGetIt() async => $initGetIt(getIt);

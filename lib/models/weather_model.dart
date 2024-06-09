@@ -40,17 +40,6 @@ class WeatherModel extends Equatable {
     );
   }
 
-  WeatherModel toEmpty() {
-    return const WeatherModel(
-      lat: 0,
-      long: 0,
-      main: 'main',
-      description: 'description',
-      id: 0,
-      name: 'name',
-    );
-  }
-
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'lat': lat,
@@ -83,7 +72,4 @@ class WeatherModel extends Equatable {
         id: map['weather'][0]['id'],
         name: map['name'],
       );
-
-  @override
-  bool get stringify => true;
 }
